@@ -35,9 +35,17 @@ This project is configured for Codex-driven development with clear, safe default
 - If blocked by missing credentials, clearly state what is needed.
 
 ## Code style
-- Follow existing project conventions first.
+- Use standard language and ecosystem formatting/linting tools as the default authority for style.
+- Improve inconsistent legacy code toward current standards rather than preserving the status quo.
 - Use descriptive names.
 - Add comments only where logic is non-obvious.
+
+## Testing and validation
+- Practice test-driven development by default: define expected behavior with tests before or alongside implementation.
+- Use an appropriate mix of tests (unit, integration, end-to-end, regression, and smoke checks as relevant) to verify intent.
+- Treat tests as the primary evidence that behavior matches requirements and that changes are safe.
+- When delegating work to subagents, require verifiable outputs and validate them with independent tests before acceptance.
+- Report results upward in concise status updates suitable for His Excellency: what was completed, what was validated, and what remains.
 
 ## Git practices
 - Use focused commits with clear messages.
